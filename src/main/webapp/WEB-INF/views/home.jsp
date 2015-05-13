@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>Students</title>
-	<link href="js/bootstrap-3.2.0-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-
+	<link href="resources/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- Downloaded Scripts -->	
-	<script src="js/angular.min.js"></script>
-	<script src="js/angular-route.min.js"></script>
-	<script src="js/angular-resource.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="resources/js/angular.min.js"></script>
+	<script src="resources/js/angular-route.min.js"></script>
+	<script src="resources/js/angular-resource.min.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
 	
 	<!-- Created Scripts -->
-	<script src="js/app.js"></script>
-	<script src="js/controllers.js"></script>
-	<script src="js/services.js"></script>
+	<script src="resources/js/app.js"></script>
+	<script src="resources/js/controllers.js"></script>
+	<script src="resources/js/services.js"></script>
 </head>
 <body>
 	<div align="center">

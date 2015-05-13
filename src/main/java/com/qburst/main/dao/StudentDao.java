@@ -10,41 +10,24 @@ import com.qburst.main.model.Student;
 import util.HibernateUtil;
 
 public class StudentDao {
-
 	SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-
 	public StudentDao() {
-
+		
 	}
 
-	public List<Student> getStudents()
-
-	{
-
+	public List<Student> getStudents() {
 		Session s = sessionFactory.openSession();
-
 		List<Student> students = s.createCriteria(Student.class).list();
-
 		s.close();
 		return students;
-
 	}
 
-	public Student getStudent(int studentid)
-
-	{
-
+	public Student getStudent(int studentid) {
 		Session s = sessionFactory.openSession();
-
 		Criteria cr = s.createCriteria(Student.class);
-
 		cr.add(Restrictions.eq("studentid", studentid));
-
 		Student student = (Student) cr.list().get(0);
-
 		s.close();
 		return student;
-
 	}
-
 }

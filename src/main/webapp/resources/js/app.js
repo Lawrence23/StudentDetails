@@ -3,12 +3,12 @@ var restAngular = angular.module('restAngular',['ngRoute','raControllers','raSer
 restAngular.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
 		when('/students', {
-			templateUrl: 'student-list.html',
+			templateUrl: 'student-list.jsp',
 			controller: 'StudentsListController'
 		}).
  
         when('/student/:studentid', {
-        	templateUrl: 'student-details.html',
+        	templateUrl: 'student-details.jsp',
         	controller: 'StudentDetailsController'
         }).
         

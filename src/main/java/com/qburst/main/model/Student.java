@@ -17,9 +17,6 @@ public class Student {
        @Column(name="name",nullable=false,length=50)
        String name;
  
-       @Column(name="imageurl",nullable=false,length=255)
-       String imageurl;
- 
        @Column(name="address",nullable=false,length=100)
        String address;
  
@@ -40,14 +37,6 @@ public class Student {
  
        public void setName(String name) {
               this.name = name;
-       }
- 
-        public String getImageurl() {
-              return imageurl;
-       }
- 
-       public void setImageurl(String imageurl) {
-              this.imageurl = imageurl;
        }
  
        public String getAddress() {
